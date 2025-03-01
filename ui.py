@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # ch 6.3.1 ui.py
+=======
+# ch 6.3.2 ui.py
+>>>>>>> 26f4b9a (Modify activateMessage function to add an argument)
 
 from PyQt5.QtWidgets import (QApplication, QWidget, QPushButton, QVBoxLayout, QMessageBox, QPlainTextEdit, QHBoxLayout, QLineEdit, QComboBox) # QLineEdit, QComboBox 추가
 from PyQt5.QtGui import QIcon
@@ -51,8 +55,8 @@ class View(QWidget):
     self.resize(256, 256)
     self.show()
 
-  def setDisplay(self): # 메서드 이름 변경
-    self.te1.appendPlainText('You clicked the button!')
+  def setDisplay(self, text):
+    self.te1.appendPlainText(text)
 
   def clearMessage(self):
     self.te1.clear()
