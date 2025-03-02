@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# ch 6.3.1 ui.py
-=======
-# ch 6.3.2 ui.py
->>>>>>> 26f4b9a (Modify activateMessage function to add an argument)
+# ch 6.6.1 ui.py
 
 from PyQt5.QtWidgets import (QApplication, QWidget, QPushButton, QVBoxLayout, QMessageBox, QPlainTextEdit, QHBoxLayout, QLineEdit, QComboBox) # QLineEdit, QComboBox 추가
 from PyQt5.QtGui import QIcon
@@ -30,7 +26,7 @@ class View(QWidget):
     self.le2.setAlignment(QtCore.Qt.AlignRight) # 라인 에디트2 오른쪽 정렬
 
     self.cb = QComboBox(self) # 콤보 박스 추가
-    self.cb.addItems(['+', '-', '*', '/']) # 콤보 박스 항목 추가(연산자로 사용)
+    self.cb.addItems(['+', '-', '*', '/', '^']) # 콤보 박스 항목 추가(연산자로 사용)
 
     hox_formular = QHBoxLayout() # 새로 정의한 위젯을 QHBoxLayout에 배치
     hox_formular.addWidget(self.le1)
